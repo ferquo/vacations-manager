@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, type FC } from 'react';
 
-export default function App() {
-  const [tripCount, setTripCount] = useState(0);
+const App: FC = () => {
+  const [tripCount, setTripCount] = useState<number>(0);
 
   return (
     <main className="app">
@@ -12,4 +12,6 @@ export default function App() {
       </button>
     </main>
   );
-}
+};
+
+export default App;
